@@ -8,11 +8,15 @@ html { box-sizing: border-box; }
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    text-shadow: 0 0 4px #000;
+
 }
 
 h2 {
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    text-shadow: 0 0 4px #000;
 }
 
 .paticka {
@@ -40,3 +44,88 @@ notebook/pc:
 */
 
 /* tvoje styly sem */
+
+.doporucujeme {
+    display: flex;
+    flex-direction: column;
+    color:#fff;
+}
+
+
+/*burger*/
+
+.hlavni-recept {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("images/burger.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-basis: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+}
+
+.recept-meta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.recept-nazev {
+    padding: 0.5rem;
+    font-size: 1.75rem;
+}
+
+
+/*ostatni recepty*/
+
+.recept {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 1px solid #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.recept h2 {
+    font-size: 1.2rem;
+}
+
+
+.recept.recept2 {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("images/sushi.jpg");
+}
+
+.recept.recept3 {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("images/rajcata.jpg");
+}
+
+.recept.recept4 {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("images/kure.jpg");
+}
+
+.recept.recept5 {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("images/grilovani.jpg");
+}
+
+
+
+.paticka {
+    display: none;
+}
