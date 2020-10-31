@@ -45,12 +45,16 @@ notebook/pc:
 
 /* tvoje styly sem */
 
+
+/*MOBILE FIRST*/
+
+@media screen and (min-width: 320px) {
+
 .doporucujeme {
     display: flex;
     flex-direction: column;
     color:#fff;
 }
-
 
 /*burger*/
 
@@ -99,7 +103,6 @@ notebook/pc:
     font-size: 1.2rem;
 }
 
-
 .recept.recept2 {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -124,8 +127,28 @@ notebook/pc:
         url("images/grilovani.jpg");
 }
 
-
-
 .paticka {
     display: none;
 }
+}
+
+/*TABLET*/
+
+@media screen and (min-width: 480px) {
+
+.sloupec {
+    display: flex;
+    flex-direction: row;
+}
+
+.hlavni-recept {
+    flex-basis: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+}
+
+
+}
+
