@@ -54,6 +54,7 @@ notebook/pc:
     color:#fff;
 }
 
+
 /*burger*/
 
 .hlavni-recept {
@@ -131,6 +132,7 @@ notebook/pc:
 }
 
 
+
 /*TABLET*/
 
 @media screen and (min-width: 480px) {
@@ -141,24 +143,61 @@ notebook/pc:
     padding: 1.25rem;
 }
 
+.recept-nazev {
+    font-size: 2rem;
+}
+
+.recept h2 {
+    font-size: 1.5rem;
+}
+
 .sloupec {
-display: flex;
+    display: flex;
 }
 
 .recept {
     flex: 50%;
     min-height: 150px;
     padding: 1.25rem;
+    border: 1px solid #fff;
 }
 
-.recept2,
-.recept4 {
-    border-right: 0.5px solid #fff;
 }
 
-.recept3,
-.recept5 {
-    border-left: 0.5px solid #fff;
+
+
+/*DESKTOP*/
+
+@media screen and (min-width: 860px) {
+
+.doporucujeme {
+    display: flex;
+    flex-direction: row;
+    }
+
+.hlavni-recept {
+    min-height: 400px;
+    padding: 1.25rem;
+    border-right: 1px solid #fff;
+    }
+
+.sloupec {
+    display: flex;
+    flex-direction: column;
+}
+
+.recept {
+    min-height: 200px;
+    padding: 1.25rem;
+    border: 1px solid #fff;
+}
+
+.recept-nazev {
+    font-size: 3rem;
+}
+
+.recept h2 {
+    font-size: 1.75rem;
 }
 
 }
